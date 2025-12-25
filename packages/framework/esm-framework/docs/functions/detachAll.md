@@ -4,7 +4,7 @@
 
 > **detachAll**(`extensionSlotName`): `void`
 
-Defined in: [packages/framework/esm-extensions/src/extensions.ts:279](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-extensions/src/extensions.ts#L279)
+Defined in: [packages/framework/esm-extensions/src/extensions.ts:279](https://github.com/arunvc/openmrs-esm-core/blob/main/packages/framework/esm-extensions/src/extensions.ts#L279)
 
 ## Parameters
 

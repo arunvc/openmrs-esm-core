@@ -2,7 +2,7 @@
 
 # Interface: Drug
 
-Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:3](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L3)
+Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:3](https://github.com/arunvc/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L3)
 
 ## Extends
 
@@ -30,7 +30,7 @@ Defined in: packages/framework/esm-api/dist/types/openmrs-resource.d.ts:14
 
 > **concept**: `Concept`
 
-Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:6](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L6)
+Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:6](https://github.com/arunvc/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L6)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:6](https:
 
 > **display**: `string`
 
-Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:8](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L8)
+Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:8](https://github.com/arunvc/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L8)
 
 #### Overrides
 
@@ -50,7 +50,7 @@ Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:8](https:
 
 > **dosageForm**: `OpenmrsResource`
 
-Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:7](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L7)
+Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:7](https://github.com/arunvc/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L7)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: packages/framework/esm-api/dist/types/openmrs-resource.d.ts:15
 
 > **strength**: `string`
 
-Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:5](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L5)
+Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:5](https://github.com/arunvc/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L5)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:5](https:
 
 > **uuid**: `string`
 
-Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:4](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L4)
+Defined in: [packages/framework/esm-emr-api/src/types/drug-resource.ts:4](https://github.com/arunvc/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/types/drug-resource.ts#L4)
 
 #### Overrides
 

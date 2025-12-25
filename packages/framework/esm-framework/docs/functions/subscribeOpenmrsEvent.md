@@ -4,7 +4,7 @@
 
 > **subscribeOpenmrsEvent**\<`T`\>(`event`, `handler`): () => `void`
 
-Defined in: [packages/framework/esm-emr-api/src/events/index.ts:24](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/events/index.ts#L24)
+Defined in: [packages/framework/esm-emr-api/src/events/index.ts:24](https://github.com/arunvc/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/events/index.ts#L24)
 
 Subscribes to a custom OpenMRS event
 

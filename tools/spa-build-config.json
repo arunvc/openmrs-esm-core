@@ -1,9 +1,11 @@
 {
-  "spaPath": "$SPA_PATH",
-  "apiUrl": "$API_URL",
-  "configUrls": ["$SPA_CONFIG_URLS"],
-  "defaultLocale": "$SPA_DEFAULT_LOCALE",
-  "importmap": "$SPA_PATH/importmap.json",
-  "routes": "$SPA_PATH/routes.registry.json",
+  "spaPath": "/openmrs/spa",
+  "apiUrl": "http://localhost:8080/openmrs",
+  "configUrls": [
+    "/openmrs/spa/config-core_demo.json"
+  ],
+  "defaultLocale": "en",
+  "importmap": "/openmrs/spa/importmap.json",
+  "routes": "/openmrs/spa/routes.registry.json",
   "supportOffline": false
 }
