@@ -10,13 +10,20 @@ if (!spaDir) {
 const imports = {};
 
 for (const dir of fs.readdirSync(spaDir)) {
-  if (!dir.startsWith("openmrs-esm-")) continue;
-
   const fullDir = path.join(spaDir, dir);
   if (!fs.statSync(fullDir).isDirectory()) continue;
 
-  // Find main esm bundle (NOT chunk files)
-  const jsFile = fs.readdirSync(fullDir).find(f =>
+  let distDir = fullDir;
+  let jsFiles = fs.readdirSync(distDir);
+
+  // ✅ Case 1: locally-built packages → esm-login-app/dist/*
+  if (fs.existsSync(path.join(fullDir, "dist"))) {
+    distDir = path.join(fullDir, "dist");
+    jsFiles = fs.readdirSync(distDir);
+  }
+
+  // Find the main OpenMRS ESM entry file
+  const jsFile = jsFiles.find(f =>
     f.startsWith("openmrs-esm-") &&
     f.endsWith(".js") &&
     !f.includes(".chunk") &&
@@ -25,20 +32,25 @@ for (const dir of fs.readdirSync(spaDir)) {
 
   if (!jsFile) continue;
 
+  // Resolve package name correctly
   const pkgName =
     "@openmrs/" +
     jsFile
       .replace(/^openmrs-/, "")
       .replace(/\.js$/, "");
 
-  imports[pkgName] = `./${dir}/${jsFile}`;
+  // Build correct relative path
+  const relativePath =
+    distDir === fullDir
+      ? `./${dir}/${jsFile}`
+      : `./${dir}/dist/${jsFile}`;
+
+  imports[pkgName] = relativePath;
 }
 
 console.log(
   JSON.stringify(
-    {
-      imports
-    },
+    { imports },
     null,
     2
   )
